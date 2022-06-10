@@ -1,15 +1,17 @@
 
 # BiG Brother
-BiG Brother is a powerful and useful tool that can be used to find video surveillance cameras with open ports worldwide.
-To find this, the tool use Shodan search engine with its API. And with the help of the Shodan dorks, target only specific video surveillance camera brands of your choice. Once a camera detected, BiG Brother will attempt to initialize a connection to it using associate default credentials.
+BiG Brother is a powerful and useful tool that can be used to find IP security surveillance cameras with open ports worldwide.
+To find IP cameras, the tool use the Shodan search engine API. And using specific Shodan dorks, target only video surveillance camera based on a given brands. Once an IP camera found, the script will attempt to initialize a connection to the device using associate default credentials.
 
 ![Big Brother logo](https://s6.gifyu.com/images/BiG-Brother-logo.gif)
 
-BiG Brother is not a perfect tool at the moment but provides basic functionalities to automate the search of video surveillance cameras with open port on Shodan and try to connect to it with using default credential. To do that, the tool will automatically detect what kind of video surveillance cameras is it (brand and model) and test the default credentials associate. It's also possible to automate the search of cameras by targeting a specific country.
+BiG Brother is not a perfect tool at the moment but provides basic functionalities to automate the search of IP cameras using Shodan API. The script can also try default credentials based on the brand found. To do this, the tool will automatically parse the HTML web page, grab the brand name and the version, and then test the default credentials associate.<br>
+It is also possible to automate the search of IP cameras by targeting a specific country.
 
-At the moment only 3 video surveillance camera brands are supported, `Sony`, `Canon` and `Panasonic`.
-I plan to add the following brands in the coming weeks: `Alphafinity`, `INSTAR`, `Milesight`, `Vacron` and `VideoIQ`.
-There is also the possibility to save and export the result of the research in `.csv` or `.txt` once completed.
+At the moment only 3 type of IP security surveillance camera brands are supported, `Sony`, `Canon` and `Panasonic`.
+But I'm maybe planing to add the following brands in the near future: `Alphafinity`, `INSTAR`, `Milesight`, `Vacron` and `VideoIQ`.<br>
+
+There is also an export functionalty that give the possibility to save the result of a research in `.csv` or `.txt` format once completed.
 
 ### Proof Of Concept
 [![Video PoC BiG Brother](https://i.ibb.co/7gXHL9q/500px-youtube-social-play.png)](https://www.youtube.com/watch?v=Ns8scuSI-bE)
@@ -27,11 +29,9 @@ pip install -r requirements.txt
 ```
 python3 big-brother.py
 ```
-Then let yourself be guided!
+That's all!<br>
 ![Big Brother Cli](https://i.ibb.co/fD3Qrhf/big-brother-demo.png)
 
-### Contribution
-Please consider contributing dorks that can reveal cameras on Shodan.
 
 ### List of Dorks
 I am not categorizing at the moment. Instead, I am going to just the list of dorks with a description. Many of the dorks can be modified to make the search more specific or generic.
