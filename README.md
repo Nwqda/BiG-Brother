@@ -3,7 +3,7 @@
 BiG Brother is a powerful and useful tool that can be used to find IP security surveillance cameras with open ports worldwide.
 To find IP cameras, the tool use the Shodan search engine API. And using specific Shodan dorks, target only video surveillance camera based on a given brands. Once an IP camera found, the script will attempt to initialize a connection to the device using associate default credentials.
 
-![Big Brother logo](https://s6.gifyu.com/images/BiG-Brother-logo.gif)
+![Big Brother logo](https://raw.githubusercontent.com/Nwqda/BiG-Brother/master/quests/BiG-Brother-logo.gif)
 
 BiG Brother is not a perfect tool at the moment but provides basic functionalities to automate the search of IP cameras using Shodan API. The script can also try default credentials based on the brand found. To do this, the tool will automatically parse the HTML web page, grab the brand name and the version, and then test the default credentials associate.<br>
 It is also possible to automate the search of IP cameras by targeting a specific country.
